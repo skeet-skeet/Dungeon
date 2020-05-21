@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon</title>
+</head>
+<body>
+    <div id="game"> 
+        <div id="wassap">
+            <h1>Oh man</h1>
+            <h2>You are like, totally in a dungeon and stuff</h2>
+            <h3>To play, select a weapon then press the attack button!</h3>
+        </div>
+      
+        <div id='weapons'>
+              <label for="weaponChoice">Weapon:</label>
+                <select id="weaponSelect">
+                  <option value=0>Sword</option>
+                  <option value=1>Arrow</option>
+                  <option value=2>Magic Wand</option>
+                  <option value=3>Fruit Salad</option>
+                </select>
+                <button type="button" onclick="weaponSelected()"> 
+                    Attack! 
+                </button>    
+        </div>
+
+        <div >
+            <h3 id="playerHit"></h3>   
+        </div>
+
+        <div>
+            <h3 id="monsterHit"></h3> 
+        </div>
+
+        <div>
+            <h3>
+                Your Health:
+            </h3>
+            <p id="playerLife"></p>
+        </div>
+
+        <div>
+            <h3>
+                Monster:
+            </h3>
+            <p id="monsterType"></p>
+            <h3>
+                Monster Health:
+            </h3>
+            <p id="monsterLife"></p>
+        </div>
+
+        <div >
+            <h1 id="playerWin"></h2>  
+        </div>
+
+        <div>
+            <h1 id="monsterWin"></h1>
+            <p id="monsterSalt"></p>
+        </div>
+
+        <div id="playAgain">
+            <button id="reset">Restart game?</button>
+        </div>
+    </div>
+
+<script type="text/javascript" src= "app.js"></script>
+
+</body>
+</html>
+
